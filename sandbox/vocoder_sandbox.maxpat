@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 4,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 59.0, 103.0, 600.0, 480.0 ],
+		"rect" : [ 476.0, 104.0, 600.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,27 +38,66 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-16",
-					"linecount" : 2,
+					"id" : "obj-20",
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 274.0, 229.5, 190.0, 33.0 ],
+					"patching_rect" : [ 208.0, 269.0, 295.0, 47.0 ],
 					"style" : "",
-					"text" : "crossfade nicht richtig gemacht, nur zum testen"
+					"text" : "die Modulation ändert die Grundtonfrequenz und wird von der Lautstärke getriggert.\nEs kann auch mit einem Keyboard gesteuert werden."
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-12",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 354.0, 347.0, 45.0, 22.0 ],
+					"id" : "obj-18",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 340.0, 173.0, 150.0, 60.0 ],
 					"style" : "",
-					"text" : "!- 157."
+					"text" : "Parameters\n1. voice count\n2. base frequency\n3. modulation theshold"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 340.0, 102.0, 150.0, 60.0 ],
+					"style" : "",
+					"text" : "Inlets\n1. Audio signal\n2. base frequency\n3. modulation on/off"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 233.0, 102.0, 50.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 302.0, 100.0, 24.0, 24.0 ],
+					"style" : ""
 				}
 
 			}
@@ -70,7 +109,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 199.0, 176.0, 46.0, 140.0 ],
+					"patching_rect" : [ 106.0, 189.0, 46.0, 140.0 ],
 					"style" : ""
 				}
 
@@ -83,7 +122,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 136.0, 176.0, 48.0, 140.0 ],
+					"patching_rect" : [ 18.0, 184.0, 48.0, 140.0 ],
 					"style" : ""
 				}
 
@@ -94,7 +133,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 127.0, 420.0, 57.0, 22.0 ],
+					"patching_rect" : [ 76.0, 428.0, 57.0, 22.0 ],
 					"style" : "",
 					"text" : "dac~ 1 2"
 				}
@@ -107,13 +146,13 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 127.0, 97.0, 97.0, 22.0 ],
+					"patching_rect" : [ 69.0, 87.0, 97.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"basictuning" : 440,
 						"followglobaltempo" : 0,
 						"formantcorrection" : 0,
 						"mode" : "basic",
-						"originallength" : [ 30218.796875, "ticks" ],
+						"originallength" : [ 30218.797279, "ticks" ],
 						"originaltempo" : 120.0,
 						"pitchcorrection" : 0,
 						"quality" : "basic",
@@ -129,12 +168,12 @@
 				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 338.0, 150.0, 53.0, 22.0 ],
+					"patching_rect" : [ 189.0, 140.0, 107.0, 22.0 ],
 					"style" : "",
-					"text" : "vocoder"
+					"text" : "vocoder 8 50 0.15"
 				}
 
 			}
@@ -145,7 +184,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 151.0, 40.0, 37.0, 22.0 ],
+					"patching_rect" : [ 93.0, 30.0, 37.0, 22.0 ],
 					"style" : "",
 					"text" : "open"
 				}
@@ -159,7 +198,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 208.0, 80.0, 24.0, 24.0 ],
+					"patching_rect" : [ 150.0, 43.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -174,8 +213,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"source" : [ "obj-12", 0 ]
+					"destination" : [ "obj-1", 1 ],
+					"source" : [ "obj-11", 0 ]
 				}
 
 			}
@@ -197,8 +236,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
-					"source" : [ "obj-6", 1 ]
+					"destination" : [ "obj-1", 2 ],
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -252,14 +291,14 @@
 		"dependency_cache" : [ 			{
 				"name" : "vocoder.maxpat",
 				"bootpath" : "~/Documents/Klangregie/ole_huebner/Halle/patches/opera/abstractions",
-				"patcherrelativepath" : "./abstractions",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "voc_voice.maxpat",
 				"bootpath" : "~/Documents/Klangregie/ole_huebner/Halle/patches/opera/abstractions",
-				"patcherrelativepath" : "./abstractions",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
