@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 476.0, 104.0, 600.0, 480.0 ],
+		"rect" : [ 476.0, 103.0, 600.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -91,13 +91,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-20",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 221.0, 415.5, 295.0, 47.0 ],
+					"patching_rect" : [ 221.0, 415.5, 295.0, 60.0 ],
 					"style" : "",
-					"text" : "die Modulation ändert die Grundtonfrequenz und wird von der Lautstärke getriggert.\nEs kann auch mit einem Keyboard gesteuert werden."
+					"text" : "die Modulation ändert die Grundtonfrequenz und wird von der Lautstärke getriggert.\nEs kann auch mit einem Keyboard gesteuert werden.\nDry stimme zumischen!"
 				}
 
 			}
