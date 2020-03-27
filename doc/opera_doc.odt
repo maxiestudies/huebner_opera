@@ -1,7 +1,8 @@
-﻿Ole Hübner - Sonntag 28.4
+﻿Meeting mit Ole
+Ole Hübner - Sonntag 28.4
 
-Instrument 1
-Synth overtones -  control manual? Program changes, yo o el pianista?
+
+
 Glissando: Un fader motorisado, tablet con osc + router. (Pitch wheel)
 cluster evtl unnötig?
 
@@ -30,3 +31,13 @@ Ambisonics? Quattro gut ausnutzen
 kbb@spielmotor.de
 katrin.beck@spielmotor.de
 
+Synth Instrumente
+
+Instrument 1
+name sound_one
+Synth overtones – LFO controls filter cutoff frequency 
+
+Instrument 2
+“geheimnisvoll-hohler sound; wie flagolettklänge”
+name gehiemnisvoll
+Measures 37-38
