@@ -10,6 +10,7 @@
 		}
 ,
 		"rect" : [ 566.0, 134.0, 640.0, 480.0 ],
+		"bgcolor" : [ 0.701961, 0.415686, 0.886275, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -42,7 +43,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 163.0, 205.0, 150.0, 20.0 ],
+					"patching_rect" : [ 164.0, 205.0, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "Bypass"
 				}
@@ -154,7 +155,8 @@
 				}
 
 			}
- ]
+ ],
+		"default_bgcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 	}
 
 }

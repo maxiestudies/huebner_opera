@@ -1,7 +1,7 @@
 * Documentation Patch Opera Halle
 ** Voice Effects
 *** Flanger
-**** random noise generator
+**** random noise generato
      the random noise generator has a metro object sending bangs to a random object. The three sliders control following parameters:
      - Probability: The probability that the gate will be opened and the noise will be heard.
      - Min interval: the random object is also connected back to the metro object, and changes the interfal between bangs. The min interval slider sets the smallest possible value that can be set in the metro object
@@ -9,4 +9,7 @@
      - The noise generator can be connected to the flanger, directly to the output or both
 **** random interruptor 
      the random interruptor has a metro at 100ms and a random generator, similar to the noise generator. It interrupts the flow of audio.
+*** Chorus + Reverb 
+**** Chorus control patch 
+     the chorus control patch saves the set configuration automatically when selecting another voice on the right side
 ** Keyboard Sounds 
