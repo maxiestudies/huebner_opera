@@ -1,0 +1,9 @@
+* Documentation Patch Opera Halle
+** Voice Effects
+*** Flanger
+**** random noise generator
+     the random noise generator has a metro object sending bangs to a random object. The three sliders control following parameters:
+     - Probability: The probability that the gate will be opened and the noise will be heard.
+     - Min interval: the random object is also connected back to the metro object, and changes the interfal between bangs. The min interval slider sets the smallest possible value that can be set in the metro object
+     - Range: the range of numbers that the metro can receive. The complete range is this value plus the min interval value.
+** Keyboard Sounds 
