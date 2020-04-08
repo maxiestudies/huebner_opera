@@ -6,4 +6,7 @@
      - Probability: The probability that the gate will be opened and the noise will be heard.
      - Min interval: the random object is also connected back to the metro object, and changes the interfal between bangs. The min interval slider sets the smallest possible value that can be set in the metro object
      - Range: the range of numbers that the metro can receive. The complete range is this value plus the min interval value.
+     - The noise generator can be connected to the flanger, directly to the output or both
+**** random interruptor 
+     the random interruptor has a metro at 100ms and a random generator, similar to the noise generator. It interrupts the flow of audio.
 ** Keyboard Sounds 
