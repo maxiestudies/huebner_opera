@@ -45,7 +45,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 846.0, 143.0, 150.0, 20.0 ],
 					"style" : "",
-					"text" : "Bypass"
+					"text" : "On/Off"
 				}
 
 			}

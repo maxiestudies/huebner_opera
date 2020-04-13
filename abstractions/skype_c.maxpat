@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 52.0, 220.0, 406.0, 480.0 ],
+		"rect" : [ 434.0, 216.0, 406.0, 480.0 ],
 		"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -136,7 +136,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 229.0, 187.0, 48.0, 20.0 ],
 					"style" : "",
-					"text" : "Bypass"
+					"text" : "On/Off"
 				}
 
 			}

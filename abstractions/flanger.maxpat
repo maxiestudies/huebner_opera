@@ -38,14 +38,27 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 479.0, 160.0, 109.0, 22.0 ],
+					"style" : "",
+					"text" : "route del feedback"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "",
 					"id" : "obj-22",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 475.0, 172.0, 30.0, 30.0 ],
+					"patching_rect" : [ 479.0, 107.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -70,7 +83,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 475.0, 213.0, 79.0, 22.0 ],
+					"patching_rect" : [ 475.0, 213.0, 81.0, 22.0 ],
 					"style" : "",
 					"text" : "loadmess #2"
 				}
@@ -132,7 +145,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-9",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -184,11 +197,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 278.0, 84.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -233,6 +246,20 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-2", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
 					"source" : [ "obj-20", 0 ]
 				}
 
@@ -246,7 +273,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
+					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-22", 0 ]
 				}
 
@@ -281,9 +308,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }
