@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 95.0, 120.0, 1093.0, 516.0 ],
+		"rect" : [ 95.0, 118.0, 1093.0, 516.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,11 +38,160 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-45",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 225.0, 401.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 217.0, 395.0, 34.0, 20.0 ],
+					"style" : "",
+					"text" : "Sum"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-43",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 140.0, 401.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 136.0, 395.0, 31.0, 20.0 ],
+					"style" : "",
+					"text" : "Cho"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 94.0, 407.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 99.0, 395.0, 29.0, 20.0 ],
+					"style" : "",
+					"text" : "Voc"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-35",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 64.0, 395.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 61.0, 395.0, 19.0, 20.0 ],
+					"style" : "",
+					"text" : "Fl"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-30",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 24.0, 395.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 24.0, 395.0, 29.0, 20.0 ],
+					"style" : "",
+					"text" : "Dry"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 46.0, 351.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 27.0, 341.0, 212.0, 20.0 ],
+					"style" : "",
+					"text" : "Mixer"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 693.0, 257.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 693.0, 257.0, 150.0, 20.0 ],
+					"style" : "",
+					"text" : "Cyborg Chorus"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 1,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-13",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "cyborg_chorus_c.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"offset" : [ -15.0, 3.0 ],
+					"patching_rect" : [ 693.0, 283.5, 114.0, 70.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 693.0, 283.5, 114.0, 70.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "gain~",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 137.0, 177.0, 22.0, 109.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 136.0, 418.0, 22.0, 109.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 230.5, 168.0, 89.0, 22.0 ],
+					"style" : "",
+					"text" : "cyborg_chorus"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-37",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 551.0, 257.0, 125.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 551.0, 257.0, 125.0, 20.0 ],
 					"style" : "",
 					"text" : "Flanger"
 				}
@@ -63,6 +212,8 @@
 					"numoutlets" : 0,
 					"offset" : [ -9.0, -22.0 ],
 					"patching_rect" : [ 551.0, 283.5, 125.0, 63.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 551.0, 283.5, 125.0, 63.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -151,7 +302,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 91.0, 442.0, 22.0, 109.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 91.0, 442.0, 22.0, 109.0 ],
+					"presentation_rect" : [ 217.0, 418.0, 22.0, 109.0 ],
 					"style" : ""
 				}
 
@@ -166,7 +317,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 101.0, 177.0, 22.0, 109.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 101.0, 177.0, 22.0, 109.0 ],
+					"presentation_rect" : [ 99.0, 418.0, 22.0, 109.0 ],
 					"style" : ""
 				}
 
@@ -181,7 +332,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 63.0, 177.0, 22.0, 109.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 63.0, 177.0, 22.0, 109.0 ],
+					"presentation_rect" : [ 61.0, 418.0, 22.0, 109.0 ],
 					"style" : ""
 				}
 
@@ -404,7 +555,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 29.0, 177.0, 22.0, 109.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 29.0, 177.0, 22.0, 109.0 ],
+					"presentation_rect" : [ 27.0, 418.0, 22.0, 109.0 ],
 					"style" : ""
 				}
 
@@ -424,7 +575,7 @@
 						"followglobaltempo" : 0,
 						"formantcorrection" : 0,
 						"mode" : "basic",
-						"originallength" : [ 118707.156463, "ticks" ],
+						"originallength" : [ 92062.868027, "ticks" ],
 						"originaltempo" : 120.0,
 						"pitchcorrection" : 0,
 						"quality" : "basic",
@@ -521,7 +672,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -529,6 +680,14 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
+					"order" : 1,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
 					"order" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
@@ -537,7 +696,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
-					"order" : 2,
+					"order" : 3,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -606,6 +765,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-36", 0 ]
 				}
@@ -615,6 +781,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-36", 0 ],
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-36", 0 ],
+					"order" : 1,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"order" : 0,
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
@@ -721,6 +903,20 @@
 			}
 , 			{
 				"name" : "flanger_c.maxpat",
+				"bootpath" : "~/Documents/Klangregie/ole_huebner/Halle/patches/opera/abstractions",
+				"patcherrelativepath" : "./abstractions",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "cyborg_chorus.maxpat",
+				"bootpath" : "~/Documents/Klangregie/ole_huebner/Halle/patches/opera/abstractions",
+				"patcherrelativepath" : "./abstractions",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "cyborg_chorus_c.maxpat",
 				"bootpath" : "~/Documents/Klangregie/ole_huebner/Halle/patches/opera/abstractions",
 				"patcherrelativepath" : "./abstractions",
 				"type" : "JSON",
