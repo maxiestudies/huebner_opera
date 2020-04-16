@@ -239,7 +239,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 48.0, 11.0, 72.0, 22.0 ],
+					"patching_rect" : [ 36.0, 9.0, 72.0, 22.0 ],
 					"style" : "",
 					"text" : "loadmess 1"
 				}
