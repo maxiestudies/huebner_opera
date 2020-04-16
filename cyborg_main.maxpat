@@ -38,6 +38,37 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 551.0, 257.0, 125.0, 20.0 ],
+					"style" : "",
+					"text" : "Flanger"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 1,
+					"border" : 1,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-34",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "flanger_c.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"offset" : [ -9.0, -22.0 ],
+					"patching_rect" : [ 551.0, 283.5, 125.0, 63.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-32",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -237,33 +268,6 @@
 					"patching_rect" : [ 84.0, 565.0, 57.0, 22.0 ],
 					"style" : "",
 					"text" : "dac~ 1 2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"format" : 6,
-					"id" : "obj-15",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 149.0, 35.0, 50.0, 22.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 149.0, 66.0, 41.0, 22.0 ],
-					"style" : "",
-					"text" : "de $1"
 				}
 
 			}
@@ -479,22 +483,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 1 ],
-					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-18", 1 ],
 					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"source" : [ "obj-15", 0 ]
 				}
 
 			}
@@ -724,6 +714,13 @@
 			}
 , 			{
 				"name" : "vocoder_har_c.maxpat",
+				"bootpath" : "~/Documents/Klangregie/ole_huebner/Halle/patches/opera/abstractions",
+				"patcherrelativepath" : "./abstractions",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "flanger_c.maxpat",
 				"bootpath" : "~/Documents/Klangregie/ole_huebner/Halle/patches/opera/abstractions",
 				"patcherrelativepath" : "./abstractions",
 				"type" : "JSON",
