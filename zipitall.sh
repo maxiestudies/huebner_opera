@@ -1,3 +1,3 @@
 #!/bin/bash
 currentDate=`date +"%Y.%m.%d"`
-7z a $currentdate-ole_patches.zip abstractions/ sandbox/ readme.rtf
+7z a $currentdate-ole_patches.zip abstractions/ sandbox/ readme.rtf cyborg_main.maxpat
