@@ -179,6 +179,7 @@
 			}
 , 			{
 				"box" : 				{
+					"floatoutput" : 1,
 					"id" : "obj-9",
 					"maxclass" : "slider",
 					"numinlets" : 1,
@@ -214,7 +215,7 @@
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 199.0, 106.0, 20.0, 140.0 ],
-					"size" : 2.0,
+					"size" : 1.0,
 					"style" : ""
 				}
 
